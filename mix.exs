@@ -55,6 +55,8 @@ defmodule UserJourney.MixProject do
   end
 
   defp deps do
-    [{:ex_doc, ">= 0.0.0", only: :dev, runtime: false}]
+    [
+      {:heimdallr, ">= 0.0.0", only: [:dev, :test]}
+    ]
   end
 end
